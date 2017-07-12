@@ -202,7 +202,7 @@ class PlayerVaults extends PluginBase{
                 TF::GREEN."/$cmd <#> - ".TF::YELLOW."Открыть хранилише #.",
             ]));
             if($sender->isOp()){
-                $sender->sendMessage(TF::RED."Use '/$cmd admin' for a list of admin commands.");
+                $sender->sendMessage(TF::RED."Используйте '/$cmd admin' чтобы посмотреть админ комманды.");
             }
         }
     }
