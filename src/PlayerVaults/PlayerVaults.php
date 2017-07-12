@@ -49,7 +49,8 @@ class PlayerVaults extends PluginBase{
             '\/    |_|\__,_|\__, |\___|_|    \_/ \__,_|\__,_|_|\__|___/',
             '               |___/                                      ',
             ' ',
-            'GitHub: http://github.com/Muqsit/PlayerVaults'
+            'GitHub: http://github.com/Muqsit/PlayerVaults',
+            "Russian lang by: http://vk.com/olekseyua (infomcpe.ru)"
         ]));
 
         if(!is_dir($this->getDataFolder())){
@@ -58,7 +59,7 @@ class PlayerVaults extends PluginBase{
         if(!is_dir($this->getDataFolder()."vaults")){
             mkdir($this->getDataFolder()."vaults");
         }
-        if(!file_exists($this->getDataFolder()."config.yml")){
+        if(!@file_exists($this->getDataFolder()."config.yml")){
             $this->saveDefaultConfig();
         }
 
